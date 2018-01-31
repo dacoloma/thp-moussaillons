@@ -1,0 +1,13 @@
+<div class="center jumbotron">
+  <h1><%= @corsair.first_name %></h1>
+  <h2><%= @corsair.age %></h2>
+  <h3><%= @corsair.likeness %></h3>
+</div>
+
+
+
+
+
+
+<%= button_to 'Edit', edit_corsair_path(@corsair), :class=>"btn btn-sm btn-warning", :method=>:get%>
+<%= button_to 'Back', corsairs_path, :class=>"btn btn-sm btn-secondary", :method=>:get %>

@@ -1,0 +1,27 @@
+<div class="center jumbotron">
+  <h1>Nouveau mouss</h1>
+  <h3>
+    Ici, tu peux créer les moussaillons 🎓
+  </h3>
+</div>
+
+
+<%= form_for @corsair do |f| %>
+    <div>
+      <%= f.label :first_name %><br />
+      <%= f.text_field :first_name%>
+    </div>
+    <div>
+      <%= f.label :age %><br />
+      <%= f.text_field :age %>
+    </div>
+
+
+    <%= f.submit "Create" %>
+
+<% end %>
+
+<p>
+
+  <%= button_to 'Back', corsairs_path, :class=>"btn btn-sm btn-outline-secondary", :method=>:get %>
+</p>
